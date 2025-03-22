@@ -8,7 +8,7 @@
             <array>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-AWAC.aml</string>
+                    <string>[Functional] Disables AWAC system clock for macOS and force-enables RTC instead. For 300-series chipsets and newer.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -24,7 +24,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-GPI0.aml</string>
+                    <string>[Functional] Enabling general-purpose I/O devices. (Touchpad)</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -32,7 +32,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-GPRW.aml</string>
+                    <string>[Functional] OS: Fix instant wake caused by _GPRW method</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -40,7 +40,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-PLUG.aml</string>
+                    <string>[Functional] The purpose of SSDT-PLUG is to allow the kernel's XCPM(XNU's CPU Power Management) to manage our CPU's power management.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -56,7 +56,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-PNLFCFL.aml</string>
+                    <string>[Functional] Adds Backlight Control for Laptop Screens. Using Lunar App</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -72,7 +72,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-I2C.aml</string>
+                    <string>[Functional] Fixes Touchpad</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -80,7 +80,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string></string>
+                    <string>[Functional] OS Check Fix patch to simulate a version of Windows for Darwin.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -88,7 +88,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-PS2K.aml</string>
+                    <string>[Functional] Fixes Brightness Keys.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -98,7 +98,7 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Path</key>
                     <string>SSDT-DGPU.aml</string>
                 </dict>
@@ -586,7 +586,7 @@
                     <key>BundlePath</key>
                     <string>VerbStub.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.4  [Audio] Fix about something headset</string>
+                    <string>V1.0.4</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -606,7 +606,7 @@
                     <key>Comment</key>
                     <string>V1.0.4 | [Fingerprint] Lilu plugin for disabling Touch ID support.</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/NoTouchID</string>
                     <key>MaxKernel</key>
@@ -784,7 +784,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.9  | [Bluetooth] Injecting bluetooth firmware on Monterey+.</string>
+                    <string>V2.6.9 | [Bluetooth] Injecting bluetooth firmware on Monterey+.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
