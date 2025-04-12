@@ -1,0 +1,23 @@
+DefinitionBlock ("", "SSDT", 2, "hack", "dgpuoff", 0x00000000)
+{
+    External (_SB_.PCI0.PEG0.PEGP, DeviceObj)
+
+    Scope (_SB.PCI0.PEG0.PEGP)
+    {
+        Method (_INI, 0, NotSerialized)
+        {
+            Store (Zero, \_SB.PCI0.PEG0.PEGP._PS0)
+            Store (Zero, \_SB.PCI0.PEG0.PEGP._ON)
+        }
+
+        Method (_OFF, 0, NotSerialized)
+        {
+            Return (Zero)
+        }
+
+        Method (_DSM, 4, NotSerialized)
+        {
+            Return (Package () {})
+        }
+    }
+}
